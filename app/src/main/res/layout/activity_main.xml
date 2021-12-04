@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodback"
+    >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="40dp"
+               android:layout_marginTop="60dp"
+               android:layout_marginRight="40dp"
+               android:layout_marginBottom="40dp"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:id="@+id/imageView"
+                   android:layout_width="match_parent"
+                   android:layout_height="132dp"
+                   android:layout_gravity="clip_horizontal"
+                   app:srcCompat="@drawable/fastfood"
+                   tools:ignore="ContentDescription" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="clip_horizontal"
+                   android:layout_marginTop="30dp"
+                   android:fontFamily="cursive"
+                   android:gravity="center_horizontal"
+                   android:text="@string/khana_khajana"
+                   android:textColor="#F1E5E5"
+                   android:textSize="50sp"
+                   android:textStyle="bold" />
+
+               <Button
+                   android:id="@+id/logInButton"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="clip_horizontal"
+                   android:layout_marginTop="30dp"
+                   android:text="@string/log_in"
+                   android:textColor="#161716"
+                   android:textSize="20sp"
+                   android:textStyle="bold"
+                   app:backgroundTint="#DAFF5722" />
+
+               <Button
+                   android:id="@+id/newRegister"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="clip_horizontal"
+                   android:layout_marginTop="15dp"
+                   android:text="@string/register"
+                   android:textColor="#161716"
+                   android:textSize="20sp"
+                   android:textStyle="bold"
+                   app:backgroundTint="#DAFF5722" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_horizontal"
+                   android:text="Skip"
+                   android:layout_marginBottom="200dp"
+                   android:layout_marginTop="15dp"
+                   android:textColor="#F8F2F2"
+                   android:textStyle="italic" />
+           </LinearLayout>
+       </ScrollView>
+   </LinearLayout>
+
+</RelativeLayout>
