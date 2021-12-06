@@ -6,12 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 //import android.widget.TextView;
 
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     Button registerText,logIn;
+    TextView skip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent1=new Intent(MainActivity.this,MainActivity3.class);
                 startActivity(intent1);
+            }
+        });
+        skip=findViewById(R.id.skip);
+        skip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2=new Intent(MainActivity.this,FoodListActivity.class);
+                startActivity(intent2);
             }
         });
     }

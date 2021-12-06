@@ -10,19 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodApp">
         <activity
-            android:name=".MainActivity3"
-            android:label="Third"
+            android:name=".FoodListActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity" >
-
-        </activity>
+            android:label="fourth"
+            android:parentActivityName=".MainActivity3"/>
+        <activity
+            android:name=".MainActivity3"
+            android:exported="true"
+            android:label="Third"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity2"
-            android:label="Second"
             android:exported="true"
-            android:parentActivityName=".MainActivity" >
-
-        </activity>
+            android:label="Second"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

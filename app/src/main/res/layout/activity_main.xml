@@ -72,6 +72,7 @@
                    android:layout_height="wrap_content"
                    android:gravity="center_horizontal"
                    android:text="Skip"
+                   android:id="@+id/skip"
                    android:layout_marginBottom="200dp"
                    android:layout_marginTop="15dp"
                    android:textColor="#F8F2F2"

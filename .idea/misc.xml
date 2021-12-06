@@ -6,6 +6,8 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/activity_main3.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/food_list.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/sample_mainfood.xml" value="0.21" />
       </map>
     </option>
   </component>
