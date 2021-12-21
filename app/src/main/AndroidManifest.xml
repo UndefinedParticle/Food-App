@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodApp">
         <activity
+            android:name=".OrderDetailActivity"
+            android:exported="true" />
+        <activity
             android:name=".FoodListActivity"
             android:exported="true"
             android:label="fourth"
-            android:parentActivityName=".MainActivity3"/>
+            android:parentActivityName=".MainActivity3" />
         <activity
             android:name=".MainActivity3"
             android:exported="true"
@@ -33,6 +36,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
