@@ -24,16 +24,16 @@ public class FoodListActivity extends AppCompatActivity {
         binding=FoodListBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         ArrayList<MainModel> list=new ArrayList<>();
-        list.add(new MainModel(R.drawable.bread,"Bread","20.00","Bread is a staple food prepared from a dough of flour (usually wheat) and water, usually by baking."));
-        list.add(new MainModel(R.drawable.eggroll,"Egg Roll","30.00","Image result for egg roll\n" +
+        list.add(new MainModel(R.drawable.bread,"Bread","20","Bread is a staple food prepared from a dough of flour (usually wheat) and water, usually by baking."));
+        list.add(new MainModel(R.drawable.eggroll,"Egg Roll","30","Image result for egg roll\n" +
                 "Egg rolls are fried, savory rolls, generally filled with cabbage chopped Chinese roast pork"));
-        list.add(new MainModel(R.drawable.biriyani,"Biriyani","110.00","Biryani is a mixed rice dish originating among the Muslims of the Indian subcontinent. It is made with spices, rice, and meat, or eggs or vegetables such as potatoes in certain regional varieties"));
-        list.add(new MainModel(R.drawable.meatt,"Meat","70.00","Chicken meat"));
-        list.add(new MainModel(R.drawable.rooti,"Rooti","5.00","Wheat Rooti"));
-        list.add(new MainModel(R.drawable.cholabhatura,"Chola Bhatura","25.00","Chole bhature is a food dish popular in the Northern areas of the Indian subcontinent. It is a combination of chana masala and bhatura/puri, a fried bread made from maida."));
-        list.add(new MainModel(R.drawable.dosa,"Dosa","35.00","A dosa is a thin pancake or crepe originating from South India, made from a fermented batter predominantly consisting of lentils and rice"));
-        list.add(new MainModel(R.drawable.momo,"Momo","50.00","Momo is a type of steamed dumpling with some form of filling"));
-        list.add(new MainModel(R.drawable.friedrice,"Fried Rice","80.00","Fried rice is a dish of cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables, seafood, or meat"));
+        list.add(new MainModel(R.drawable.biriyani,"Biriyani","110","Biryani is a mixed rice dish originating among the Muslims of the Indian subcontinent. It is made with spices, rice, and meat, or eggs or vegetables such as potatoes in certain regional varieties"));
+        list.add(new MainModel(R.drawable.meatt,"Meat","70","Chicken meat"));
+        list.add(new MainModel(R.drawable.rooti,"Rooti","5","Wheat Rooti"));
+        list.add(new MainModel(R.drawable.cholabhatura,"Chola Bhatura","25","Chole bhature is a food dish popular in the Northern areas of the Indian subcontinent. It is a combination of chana masala and bhatura/puri, a fried bread made from maida."));
+        list.add(new MainModel(R.drawable.dosa,"Dosa","35","A dosa is a thin pancake or crepe originating from South India, made from a fermented batter predominantly consisting of lentils and rice"));
+        list.add(new MainModel(R.drawable.momo,"Momo","50","Momo is a type of steamed dumpling with some form of filling"));
+        list.add(new MainModel(R.drawable.friedrice,"Fried Rice","80","Fried rice is a dish of cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables, seafood, or meat"));
         MainAdapter adapter=new MainAdapter(list,this);
         binding.recyclerview.setAdapter(adapter);
         LinearLayoutManager layoutManager=new LinearLayoutManager(this);
