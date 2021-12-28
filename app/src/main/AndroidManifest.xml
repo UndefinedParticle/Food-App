@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodApp">
         <activity
+            android:name=".OrderShow"
+            android:label="OrderShow"
+            android:parentActivityName=".OrderDetailActivity"
+            android:exported="true" />
+        <activity
             android:name=".OrderDetailActivity"
             android:exported="true" />
         <activity

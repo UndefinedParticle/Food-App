@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,6 +16,7 @@ import java.util.Objects;
 
 public class OrderDetailActivity extends AppCompatActivity {
     ActivityOrderDetailBinding binding;
+    Button myOrder;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,5 +32,16 @@ public class OrderDetailActivity extends AppCompatActivity {
         binding.orderFoodName.setText(name);
         binding.orderFoodPrice.setText(String.format("%d",price));
         binding.foodDescription.setText(description);
+        myOrder=findViewById(R.id.placedOrder);
+        myOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(OrderDetailActivity.this,OrderShow.class);
+
+                //ntent.putExtra("orderedfoodimage",findViewById(R.id.orderedFood).getText().toString());
+                startActivity(intent);
+            }
+        });
+
     }
 }

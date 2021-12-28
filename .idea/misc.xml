@@ -7,8 +7,10 @@
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/activity_main3.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/activity_order_detail.xml" value="0.144921875" />
+        <entry key="app/src/main/res/layout/activity_order_show.xml" value="0.144921875" />
         <entry key="app/src/main/res/layout/food_list.xml" value="0.15" />
         <entry key="app/src/main/res/layout/sample_mainfood.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/sample_ordershow.xml" value="0.144921875" />
       </map>
     </option>
   </component>
