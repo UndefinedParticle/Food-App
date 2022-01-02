@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.foodapp.databinding.ActivityOrderDetailBinding;
 import com.example.foodapp.databinding.FoodListBinding;
@@ -32,7 +33,22 @@ public class OrderDetailActivity extends AppCompatActivity {
         binding.orderFoodName.setText(name);
         binding.orderFoodPrice.setText(String.format("%d",price));
         binding.foodDescription.setText(description);
-        myOrder=findViewById(R.id.placedOrder);
+        DBhelper helper=new DBhelper(this);
+        binding.placedOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean isInserted=helper.insertOrder(binding.orderNameBox.getText().toString(),
+                        binding.orderPhoneBox.getText().toString(),
+                        image,name,price,
+                        Integer.parseInt(binding.orderQuantity.getText().toString()),
+                        description);
+                if(isInserted==true){
+                    Toast.makeText(OrderDetailActivity.this,"Order Placed",Toast.LENGTH_SHORT).show();
+                }else
+                    Toast.makeText(OrderDetailActivity.this,"ERROR",Toast.LENGTH_SHORT).show();
+            }
+        });
+        /*myOrder=findViewById(R.id.placedOrder);
         myOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,7 +57,7 @@ public class OrderDetailActivity extends AppCompatActivity {
                 //ntent.putExtra("orderedfoodimage",findViewById(R.id.orderedFood).getText().toString());
                 startActivity(intent);
             }
-        });
+        });*/
 
     }
 }

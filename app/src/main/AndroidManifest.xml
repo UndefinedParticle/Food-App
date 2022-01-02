@@ -20,7 +20,7 @@
         <activity
             android:name=".FoodListActivity"
             android:exported="true"
-            android:label="fourth"
+            android:label="Food List"
             android:parentActivityName=".MainActivity3" />
         <activity
             android:name=".MainActivity3"

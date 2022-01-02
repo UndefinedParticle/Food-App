@@ -26,8 +26,10 @@ public class OrderShow extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         binding= ActivityOrderShowBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        ArrayList<OrderShowModel> list=new ArrayList<>();
-        list.add(new OrderShowModel(R.drawable.bread,"Bread","25","1"));
+
+        DBhelper helper=new DBhelper(this);
+        ArrayList<OrderShowModel> list=helper.getOrders();
+
         OrderShowAdapter adapter=new OrderShowAdapter(list,this);
         binding.recyclerview1.setAdapter(adapter);
         LinearLayoutManager layoutManager=new LinearLayoutManager(this);

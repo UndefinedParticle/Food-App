@@ -1,9 +1,13 @@
 package com.example.foodapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.example.foodapp.Adapters.MainAdapter;
 import com.example.foodapp.Models.MainModel;
@@ -20,7 +24,7 @@ public class FoodListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Objects.requireNonNull(getSupportActionBar()).hide();
+        //Objects.requireNonNull(getSupportActionBar()).hide();
         binding=FoodListBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         ArrayList<MainModel> list=new ArrayList<>();
@@ -39,5 +43,22 @@ public class FoodListActivity extends AppCompatActivity {
         LinearLayoutManager layoutManager=new LinearLayoutManager(this);
         binding.recyclerview.setLayoutManager(layoutManager);
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.myOrders:
+                startActivity(new Intent(FoodListActivity.this,OrderShow.class));
+                break;
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

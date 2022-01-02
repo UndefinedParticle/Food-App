@@ -2,7 +2,11 @@ package com.example.foodapp.Models;
 
 public class OrderShowModel {
     int orderedImage;
-    String orderedFood,orderedPrice,orderNumber,orderedDescription;
+    String orderedFood,orderedPrice,orderNumber;
+
+    public OrderShowModel() {
+
+    }
 
     public int getOrderedImage() {
         return orderedImage;

@@ -103,7 +103,7 @@
                    />
 
                    <EditText
-                       android:id="@+id/editTextTextPersonName"
+                       android:id="@+id/orderNameBox"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
                        android:layout_marginBottom="5dp"
@@ -113,7 +113,7 @@
                        tools:ignore="TouchTargetSizeCheck" />
 
                    <EditText
-                       android:id="@+id/editTextPhone"
+                       android:id="@+id/orderPhoneBox"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
                        android:layout_marginTop="5dp"
